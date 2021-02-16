@@ -19,7 +19,7 @@ result2 = []
 min = 999999
 for idx2, row2 in enumerate(rawData[1:]):
     if '신도림' not in row2[0]:
-    #신도림동이 아닌 지역을 만나면
+    #신도림동이 아닌 행정구역을 만나면
         
         for idx3, row3 in enumerate(row2[3:103]):
         #그 지역의 index 3의 data(0세 인구수)부터 index 103을
@@ -34,10 +34,10 @@ for idx2, row2 in enumerate(rawData[1:]):
         if temp < min:
             min = temp
             area = idx2
-            #row2의 for문이 돌아갈 때 마다 지역이 바뀜
+            #row2의 for문이 돌아갈 때 마다 행정구역이 바뀜
         
         result2 = []
-        #다시 새로운 지역의 인구와 for문을 돌아야 하기 때문에 result2를 비워줌
+        #다시 새로운 행정구역의 인구와 for문을 돌아야 하기 때문에 result2를 비워줌
     
 print(rawData[area+1][0])
 
