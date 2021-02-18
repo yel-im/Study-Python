@@ -20,7 +20,9 @@ result2 = []
 min = 999999
 for idx2, row2 in enumerate(rawData[1:]):
     
-    if '신도림' not in row2[0]:
+    if '신도림' not in 
+    
+    row2[0]:
         
         for idx3, row3 in enumerate(row2[3:103]):
             result2.append(abs(result[idx3]/result[1] - (int(row2[1].replace(',',''))/int(row3.replace(',','')))))
