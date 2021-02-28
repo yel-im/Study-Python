@@ -1,6 +1,6 @@
 import csv
 
-f = open("D:/기상자료개방포털.csv")
+f = open("C:/Users/user/Desktop/github/Python/자료/기상자료개방포털.csv")
 data = csv.reader(f)
 
 test = []
