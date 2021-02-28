@@ -1,6 +1,6 @@
 import csv
 
-f = open('D:자료/subway_data.CSV')
+f = open("C:/Users/user/Desktop/github/Python/자료/subway_data.CSV")
 data = csv.reader(f)
 
 rawData=[]
